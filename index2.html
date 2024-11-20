@@ -22,22 +22,42 @@
             width: 100%;
             height: 100%;
         }
+        h1{
+            display:inline-block;
+            height:40px;
+            background-color: rgb(97, 100, 139);
+        }
+
+        p{
+            display:inline-block;
+            height:20px;
+            background-color: rgb(97, 100, 139);
+        }
+        h2{
+            display:inline-block;
+            background-color: rgb(97, 100, 139);
+        }
+        .heading{
+            margin: bottom 12px;
+            font-size: x-large;
+        }
+
     </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gray-100">
 
     <!-- Navigation -->
     <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-10">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <div class="text-2xl font-bold text-gray-800">Your Name</div>
+            <div class="text-2xl font-bold text-gray-800">Drusilla Schnittke</div>
             <div class="space-x-4">
                 <a href="#intro" class="text-gray-600 hover:text-gray-800">Intro</a>
                 <a href="#gallery" class="text-gray-600 hover:text-gray-800">Gallery</a>
                 <a href="#sketch" class="text-gray-600 hover:text-gray-800">Sketch</a>
                 <a href="#video" class="text-gray-600 hover:text-gray-800">Video</a>
-                <a href="example@email.com" class="text-gray-600 hover:text-gray-800">Email</a>
+                <a href="mailto:quackon@gmail.com" class="text-gray-600 hover:text-gray-800">Email</a>
                 <a href="https://openprocessing.org/" class="text-gray-600 hover:text-gray-800">Open Processing</a>
-                <a href="https://instagram.com/" class="text-gray-600 hover:text-gray-800">Instagram</a>
+                <a href="https://instagram.com/silla_drusilla" class="text-gray-600 hover:text-gray-800">Instagram</a>
             </div>
         </div>
     </nav>
@@ -46,65 +66,121 @@
     <div class="container mx-auto px-6 py-20 flex flex-col md:flex-row">
         <!-- Image Column -->
         <div class="w-full md:w-1/3 mb-8 md:mb-0">
-            <img src="img/pupper.jpg" alt="Your Image" class="rounded-lg shadow-lg">
+            <img src="img/profilepicForSite.jpg" alt="Your Image" class="rounded-lg shadow-lg">
         </div>
 
         <!-- Content Column -->
         <div class="w-full md:w-2/3 pl-8">
             <!-- Intro Section -->
-            <section id="intro" class="mb-16">
-                <h1 class="text-4xl font-bold mb-4">Your Name</h1>
-                <p class="text-lg mb-6">
+            <section id="intro" class="mb-20">
+                <h1 class="text-4xl text-yellow-500 font-bold mb-4">Drusilla Schnittke</h1>
+                <p class="text-lg text-yellow-200 mb-6">
                     A brief introduction about yourself. You can add your background, skills, and interests here.
                 </p>
-                <a href="your-cv.pdf" download class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600">
-                    Download CV
-                </a>
+                <div>
+                    <a href="your-cv.pdf" download class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600">
+                        Download CV
+                    </a>
+                </div>
             </section>
 
             <!-- Gallery Section -->
             <section id="gallery" class="mb-16">
-                <h2 class="text-3xl font-bold mb-6">Gallery</h2>
+                <h2 class="text-3xl font-bold mb-6">Projects</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <img src="img/img1.png" alt="Image 1" class="rounded-lg shadow-lg">
-                    <img src="img/img2.png" alt="Image 2" class="rounded-lg shadow-lg">
-                    <img src="img/img3.png" alt="Image 3" class="rounded-lg shadow-lg">
-                    <img src="img/img4.png" alt="Image 4" class="rounded-lg shadow-lg">
+                    <div>
+                        <div>
+                            <h1 class="text-2xl font-bold mb-6">Etudes</h1>
+                            <img src="img/quadriptych.jpg" alt="Image 1" class="rounded-lg shadow-lg">
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold mb-6">Kupala Night</h1>
+                            <div>
+                                <h2 class="text-xl font-bold"> Concept Art</h2>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">    
+                                <img src="img/избаОднокам.jpg" alt="Image 2" class="rounded-lg shadow-lg">
+                                <img src="img/церковь.jpg" alt="Image 3" class="rounded-lg shadow-lg">
+                            </div>
+                                <p class="text-lg text-yellow-200 mb-12"> A game based on Russian folklore, focusing on witch lore, inspired by black book. 
+                                    You are a witch, expected to take a side. Village witches protect a village's crops from being cursed, while hedge witches do the cursing</p>
+                     
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold mb-6">Creative Coding and Audio Programming</h1>
+                            <img src="img/rainSimth.png" alt="Image 4" class="rounded-lg shadow-lg">
+                            <div>
+                                <p class="text-lg text-yellow-200"> Rain Sim is a generative, fully synthesized rain soundscape made in MAX/MSP with adjustable settings to make your own rainy day.</p1>
+                                <a href="patches/rainMain.maxpat" download class="block text-center text-blue-200 mt-2 font-medium">Download rainSim</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <h1 class="text-2xl font-bold">Mumonkan Video remix</h1>        
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="video-container rounded-lg shadow-lg">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/UpcTj3e8DXM?si=5qH6lSRByDnFhi4l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sketch Section -->
+                <section id="sketch" class="mb-16">
+                    <div id="p5-canvas" class="rounded-lg"></div>
+                    <script>
+                        
+                    locY = [50];
+                    locX = [50];
+                    locX1 = [50];
+                    locY1 = [50];
+                        function setup() {
+                            let canvas = createCanvas(windowWidth, windowHeight);
+                            canvas.position(0, 0, "fixed")
+                            canvas.style('z-index', '-1')
+                            canvas.parent('p5-canvas');
+                        }
+
+                        function draw() {
+                            frameRate(30);
+                        background(97, 100, 139);
+                        stroke(255, 100,100);
+                        for(i = 0; i < 50; i++){
+                            locX[i] = random(width);
+                            locY[i] = random(height);
+                            locX1[i] = locX[i] + 10;
+                            locY1[i] = locY[i] + 10;
+                            line(mouseX, locY1[i], locX1[i], mouseY);
+                            }
+                        }
+                        function windowResized() {
+                            resizeCanvas(windowWidth, windowHeight);
+                        }
+                    </script>
+                                <!-- Video Section -->
+                                 
+                <section id="video">                
+                <div class="mb-0 mt-12">
+                    <h1 class="text-2xl font-bold gap-12 mb-6">Film Score/Sound Design and Demo Reels</h1>
                 </div>
-            </section>
-
-            <!-- Sketch Section -->
-            <section id="sketch" class="mb-16">
-                <h2 class="text-3xl font-bold mb-6">Sketch</h2>
-                <div id="p5-canvas" class="rounded-lg"></div>
-                <script>
-                    function setup() {
-                        let canvas = createCanvas(950, 400);
-                        canvas.parent('p5-canvas');
-                    }
-
-                    function draw() {
-                        background(220);
-                        fill(51);
-                        ellipse(mouseX, mouseY, 50, 50);
-                    }
-                </script>
-            </section>
-
-
-            <!-- Video Section -->
-            <section id="video">
-                <h2 class="text-3xl font-bold mb-6">Video</h2>
                 <div class="video-container rounded-lg shadow-lg">
-                    <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5MbnQ5lcwks?si=im4gwtun6NpWG993" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                                            
                 </div>
+                <div class="video-container rounded-lg shadow-lg">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/j-UkYgmNSgc?si=PpQLr2IvPSUfduhZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                                            
+                </div>
+                
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CStI9XHvwxw?si=cS7Jz7K3v8yNdtKZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </section>
         </div>
-    </div>
+     </div>
+                </section>
+            </div>
+
+
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white text-center py-4">
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
+        <p>&copy; 2023 Drusilla Schnittke. All rights reserved.</p>
     </footer>
 
 </body>
